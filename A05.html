@@ -1,0 +1,24 @@
+<!-- 
+ 5. Write the code to develop a Web page, as shown below, using frames: 
+----------------------------------------
+|            |        Top Right        |
+| Left Frame |-------------------------|
+|            |  Bottom01  |  Bottom02  |
+----------------------------------------
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Frames</title>
+</head>
+<frameset cols="33.33%,66.66%">
+    <frame src="a.html">
+    <frameset rows="50%,50%">        
+        <frame src="b.html">
+        <frameset cols="50%,50%">
+            <frame src="c.html">
+            <frame src="d.html">
+        </frameset>
+    </frameset>
+</frameset>
+</html>

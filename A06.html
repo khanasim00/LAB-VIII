@@ -1,0 +1,30 @@
+<!-- 
+6. Design a page with a text box called ‘name’ and a button with label ‘Enter.’ 
+When you click on the button, another page should open, with the message 
+“Welcome <name>”, where name should be equal to the name entered in the first page. 
+Set default value of ‘name’ text box to Victoria. Add another button called Reset 
+on click of this button name ‘text box’ should be set to default value. 
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Welcome</title>
+    <script>
+        function enterName() {
+            let a=document.querySelector('#name').value;
+            let b=document.querySelector('body');
+            b.innerHTML='<h2>Welcome '+a+'</h2';
+        }
+        function resetName() {
+            document.querySelector('#name').value="100";
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="name" value="Victoria">
+    <button onclick="enterName()">Enter</button>
+    <button onclick="resetName()">Reset</button>
+</body>
+</html>
